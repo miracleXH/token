@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #ffffff;
+  --background: #171717;
+  /* --background: #1f1f1f; */
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: var(--background);
+}
+
+body > * {
+  font-family: var(--font-brown);
+  color: rgb(var(--foreground));
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: var(--font-brown-bold);
+}
+
+h1,
+h2,
+h3,
+h4,
+label,
+p {
+  color: var(--foreground);
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h4 {
+  margin-bottom: 0.7rem;
+  color: #00e5ff;
+}
+
+p {
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.font-light {
+  font-family: var(--font-brown-light);
+}
+
+.font-medium {
+  font-family: var(--font-brown);
+}
+
+.font-bold {
+  font-family: var(--font-brown-bold);
+}
+
+.section-with-bg {
+  background: #171717;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+}

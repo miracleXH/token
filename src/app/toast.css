@@ -1,0 +1,28 @@
+.Toastify__toast-container{
+    top: 5rem !important;
+    right: .8rem !important;
+}
+
+.Toastify__toast{
+    background: #3D3D3D !important;
+    border: 1px solid rgba(0, 229, 255, .4) !important;
+    border-radius: 0.65rem !important;
+}
+
+.Toastify__toast-body{
+    color: #fff !important;
+    padding-left: .7rem !important;
+    padding-right: .7rem !important;
+}
+
+.Toastify__close-button{
+    color: #fff !important;
+    opacity: .5 !important;
+}
+
+.Toastify__progress-bar{
+    /* display: none !important; */
+    opacity: 0 !important;
+    height: 3px !important;
+    background: #fff !important;
+}
